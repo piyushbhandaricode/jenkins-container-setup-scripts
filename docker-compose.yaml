@@ -3,8 +3,8 @@ services:
   jenkins-server: 
     image: jenkins/jenkins:lts
     ports:
-    - 8080:8080 
-    - 50001:50001  # master and worker nodes
+      - 8080:8080 
+      - 50001:50001  # master and worker nodes
     volumes:
     - jenkins_home:/var/jenkins_home
     - /var/run/docker.sock:/var/run/docker.sock
