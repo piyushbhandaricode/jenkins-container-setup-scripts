@@ -6,9 +6,9 @@ services:
       - 8080:8080 
       - 50001:50001  # master and worker nodes
     volumes:
-    - jenkins_home:/var/jenkins_home
-    - /var/run/docker.sock:/var/run/docker.sock
-    - /usr/bin/docker:/usr/bin/docker # learn how to use $(which docker) here
+      - jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker # learn how to use $(which docker) here
 volumes:
   jenkins_home:
     driver: local
